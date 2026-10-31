@@ -104,7 +104,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/models/llama/megatron/modeling_llama_megatron.py:330** - for better performance, the sp padding should be removed at each layer. Not sure the performance gap
 - [ ] **luffy/verl/verl/models/llama/megatron/modeling_llama_megatron.py:588** - for better performance, the sp padding should be removed at each layer. Not sure the performance gap
 - [ ] **luffy/verl/verl/models/registry.py:21** - (sgm): HF may supported more than listed here, we should add more after testing
-- [ ] **luffy/verl/verl/models/transformers/llama.py:88** - These transpose are quite inefficient but Flash Attention requires the layout [batch_size, sequence_length, num_heads, num_heads, head_dim]. We would need to refactor the KV cache
+- [ ] **luffy/verl/verl/models/transformers/llama.py:88** - These transpose are quite inefficient but Flash Attention requires the layout [batch_size, sequence_length, num_heads, head_dim]. We would need to refactor the KV cache
 - [ ] **luffy/verl/verl/protocol.py:114** - Optimize memory usage during tensor reshaping
 - [ ] **luffy/verl/verl/protocol.py:115** - Add support for different tensor types and shapes
 - [ ] **luffy/verl/verl/protocol.py:136** - Optimize tensor view operations for performance
